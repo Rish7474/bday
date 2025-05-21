@@ -52,7 +52,7 @@ export default function TreasureChest({ onOpen }) {
             onTouchMove={(e) => handleMouseMove(e.touches[0])}
             onTouchEnd={(e) => handleMouseUp(e.changedTouches[0])}
         >
-            <div ref={chestRef} className={`chest ${chestOpened ? 'opened' : ''}`}>
+            <div ref={chestRef} className={`chest ${chestOpened ? 'opened' : 'shake'}`}>
                 <div className="chest-lid" />
                 <div className="chest-body">
                     <div className="chest-lock-zone" />
