@@ -43,7 +43,6 @@ Coding with much love and joy,
                 ))}
                 {done && (
                     <>
-                        <br />
                         Source code:{' '}
                         <a
                             href="https://github.com/Rish7474/bday"
