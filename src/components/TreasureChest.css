@@ -108,5 +108,5 @@
 }
 
 .chest.shake {
-    animation: shake 1s infinite ease-in-out;
+    animation: shake 0.72s infinite ease-in-out;
 }
