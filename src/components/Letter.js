@@ -9,7 +9,7 @@ export default function Letter({ onComplete }) {
 
 Saying this is an understatement: thank you for being a warm, positive force in my life and always showing up for me.
 
-This is your year—may it overflow with well-earned blessings and growth., and I'm just excited to witness it.
+This is your year—may it overflow with well-earned blessings and growth, and I'm just excited to witness it.
 
 Cheers to 24! I can’t wait to see you again in June.
 
