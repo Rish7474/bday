@@ -11,7 +11,7 @@ This is your year and will deservingly be filled so many blessings and growth an
 
 Cheers to 24 and look foward seeing you again in June!
 
-Coding with much joy and love,
+Coding with much love and joy,
 - RM`;
 
     useEffect(() => {
