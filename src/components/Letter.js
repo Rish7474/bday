@@ -3,16 +3,19 @@ import './Letter.css';
 
 export default function Letter({ onComplete }) {
     const [typed, setTyped] = useState('');
+    const [done, setDone] = useState(false);
+
     const fullText = `Happy Birthday to my dearest friend, Mehra! 
-    
-    Saying this as an understatment, thank you being a warm, positive force in my life and always being there for me.
 
-This is your year and will deservingly be filled so many blessings and growth and I am just super excited to be able to witness it.
+Saying this is an understatement: thank you for being a warm, positive force in my life and always showing up for me.
 
-Cheers to 24 and look foward seeing you again in June!
+This is your year—may it overflow with well-earned blessings and growth. I’m thrilled to witness it all.
+
+Cheers to 24! I can’t wait to see you again in June.
 
 Coding with much love and joy,
-- RM`;
+- RM
+`;
 
     useEffect(() => {
         let idx = 0;
@@ -22,6 +25,7 @@ Coding with much love and joy,
             idx += 1;
             if (idx > fullText.length) {
                 clearInterval(timer);
+                setDone(true);                 // typing finished
                 onComplete && onComplete();
             }
         }, speed);
@@ -37,6 +41,19 @@ Coding with much love and joy,
                         <br />
                     </React.Fragment>
                 ))}
+                {done && (
+                    <>
+                        <br />
+                        Source code:{' '}
+                        <a
+                            href="https://github.com/Rish7474/bday"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github.com/Rish7474/bday
+                        </a>
+                    </>
+                )}
             </p>
         </div>
     );
