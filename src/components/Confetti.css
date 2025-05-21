@@ -6,5 +6,4 @@
     height: 100%;
     pointer-events: none;
     background-image: url('https://cdn.jsdelivr.net/gh/leenwhee/confetti.js@master/confetti.min.js');
-    /* You can integrate a lightweight confetti script or pure CSS shapes */
 }

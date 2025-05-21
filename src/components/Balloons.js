@@ -26,7 +26,12 @@ export default function Balloons({ stopGenerating }) {
                 <div
                     key={b.id}
                     className="balloon"
-                    style={{ left: b.left, animationDelay: b.delay, animationDuration: b.duration, backgroundColor: b.color }}
+                    style={{
+                        left: b.left,
+                        animationDelay: b.delay,
+                        animationDuration: b.duration,
+                        backgroundColor: b.color
+                    }}
                 />
             ))}
         </div>

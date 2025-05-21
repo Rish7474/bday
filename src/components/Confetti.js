@@ -14,8 +14,8 @@ export default function Confetti() {
         <ReactConfetti
             width={dimensions.width}
             height={dimensions.height}
-            numberOfPieces={300}
-            gravity={0.3}
+            numberOfPieces={800}
+            gravity={0.4}
             recycle={false}
         />
     );

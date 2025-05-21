@@ -3,7 +3,16 @@ import './Letter.css';
 
 export default function Letter({ onComplete }) {
     const [typed, setTyped] = useState('');
-    const fullText = 'Happy Birthday, dear friend! Wishing you all the joy and love today and always. Feel free to customize this message to anything much longer.';
+    const fullText = `Happy Birthday to my dearest friend, Mehra! 
+    
+    Saying this as an understatment, thank you being a warm, positive force in my life and always being there for me.
+
+This is your year and will deservingly be filled so many blessings and growth and I am just super excited to be able to witness it.
+
+Cheers to 24 and look foward seeing you again in June!
+
+Coding with much joy and love,
+- RM`;
 
     useEffect(() => {
         let idx = 0;
@@ -17,11 +26,18 @@ export default function Letter({ onComplete }) {
             }
         }, speed);
         return () => clearInterval(timer);
-    }, []);
+    }, [onComplete, fullText]);
 
     return (
         <div className="letter">
-            <p>{typed}</p>
+            <p>
+                {typed.split('\n').map((line, i) => (
+                    <React.Fragment key={i}>
+                        {line}
+                        <br />
+                    </React.Fragment>
+                ))}
+            </p>
         </div>
     );
 }
